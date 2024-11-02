@@ -110,16 +110,3 @@ const val ARG_TRANSACTION_ID = "transactionId"
 const val ARG_ACCOUNT_ID = "accountId"
 const val ARG_IS_DUAL_PORTRAIT = "isDualPortrait"
 
-// Problem
-// a lot of nav, how to prevent duplication aka idempotency
-// track changes easyly when move one nav to another nav
-// see all nav structure in one file
-// see all deeplink easyly
-// see all root easyly
-// see all argument easyly
-abstract class NavigationDestination(prefix: String) {
-    internal abstract val routeName: String
-
-    val route = prefix + routeName
-
-}
